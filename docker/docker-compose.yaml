@@ -5,6 +5,20 @@ services:
     image: langgenius/dify-api:0.3.13
     restart: always
     environment:
+    
+
+
+    
+      OPENAI_API_BASE: ' https://api.gptmf.top'
+      'NOTION_CLIENT_ID': '78cccf7f-d8d8-4702-a9f4-25b48c3fddf8'
+      'NOTION_CLIENT_SECRET': 'secret_dohIwClKjmGm8b8jQ4pTVhC3uwL5NTWQSgjE792F3NG'
+      'NOTION_INTEGRATION_TYPE': 
+      'NOTION_INTERNAL_SECRET': 
+      'NOTION_INTEGRATION_TOKEN': 
+
+
+
+    
       # Startup mode, 'api' starts the API server.
       MODE: api
       # The log level for the application. Supported values are `DEBUG`, `INFO`, `WARNING`, `ERROR`, `CRITICAL`
@@ -127,6 +141,20 @@ services:
     image: langgenius/dify-api:0.3.13
     restart: always
     environment:
+
+
+
+
+      OPENAI_API_BASE: ' https://api.gptmf.top'
+      'NOTION_CLIENT_ID': '78cccf7f-d8d8-4702-a9f4-25b48c3fddf8'
+      'NOTION_CLIENT_SECRET': 'secret_dohIwClKjmGm8b8jQ4pTVhC3uwL5NTWQSgjE792F3NG'
+      'NOTION_INTEGRATION_TYPE': 
+      'NOTION_INTERNAL_SECRET': 
+      'NOTION_INTEGRATION_TOKEN': 
+
+
+
+      
       # Startup mode, 'worker' starts the Celery worker for processing the queue.
       MODE: worker
 
